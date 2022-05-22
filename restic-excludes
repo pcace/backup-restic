@@ -39,6 +39,10 @@ permissions.sqllite-_
 
 # OSX
 
+BIMcloud Server Configurator
+.DocumentRevisions-V100
+.Trashes
+.TemporaryItem
 /dev
 /.vol
 /mach.sym

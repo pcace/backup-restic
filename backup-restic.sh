@@ -84,6 +84,17 @@ if ! [ -d $BACKUPVOLUME ]; then
     exit 1
 fi
 
+# try to mount second repo Volume:
+#osascript -e "try
+#	mount volume "$NETWORKVOLUME"
+#end try
+#"
+#if [ $? -eq 0 ]; then
+#    echo "second repo location mounted"
+#else
+#    echo "cannot mount, continuing with only one repo"
+#fi
+
 # set some defaults (if the aren't set in restic-vars file)
 if [ -z ${ALWAYSUPDATEEXCLUDEFILE+x} ]; then ALWAYSUPDATEEXCLUDEFILE="TRUE"; fi
 if [ -z ${BACKUPPATH+x} ]; then BACKUPPATH=$HOME; fi
