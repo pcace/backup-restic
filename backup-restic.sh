@@ -15,7 +15,7 @@
 
 # Some default variables
 ERROR=''
-EXCLUDEFILE="$HOME/opt/backup-restic/restic-excludes"
+EXCLUDEFILE="$HOME/opt/backup_restic/restic-excludes"
 
 # Now get your vars (and a big description if not)
 VARSFILE="$HOME/.config/restic-vars"

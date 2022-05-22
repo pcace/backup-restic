@@ -20,18 +20,33 @@ _.cprestoretmp\*
 cookies.sqllite-_
 permissions.sqllite-_
 
+# Deduplicate User Data
+
+/Volumes/Daten/LR_copy
+/Volumes/Daten/Lightroom_Videos
+/Volumes/Daten/OSM
+/Volumes/Daten/SteamLibrary
+/Volumes/Daten/VirtualMachines
+/Volumes/Daten/Luminar
+/Volumes/Daten/Luminar
+/Volumes/Daten/Downloads
+/Volumes/Daten/FinalCUT
+
+/Volumes/Fotos/Lightroom
+/Volumes/Fotos/Fotomediathek.photoslibrary
+
 # OSX
 
 /dev
 /.vol
 /mach.sym
-/mach_kernel
+/mach*kernel
 .hotfiles.btree*
 **/Network Trash Folder
 **/VM Storage
 .fseventsd.
 **/Library/Caches
-**/.Spotlight-*
+**/.Spotlight-_
 /Network
 /tmp
 /cores
@@ -61,12 +76,12 @@ permissions.sqllite-_
 **/Library/Safari/HistoryIndex.sk
 **/Library/Calendars/Calendar Cache
 **/iTunes/Album Artwork/Cache
-\*\*/iPhoto Library/iPod Photo Cache_
-**/backups.backupdb/_
+\*\*/iPhoto Library/iPod Photo Cache*
+\*\*/backups.backupdb/*
 /Desktop DB
 /Desktop DF
 /Network/Servers
-/Users/Shared/SC Info_
+/Users/Shared/SC Info\_
 /net
 /private/var/automount
 /private/var/db/dhcpclient
@@ -84,4 +99,4 @@ permissions.sqllite-_
 **/Cache
 **/.Cache
 **/Downloads
-**/Library/Containers
+\*\*/Library/Containers
