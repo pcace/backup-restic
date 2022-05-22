@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# Created by github.com/joltcan
-# Please report errors via github, and contribute if you want to.
-# I mainly use this on my laptop to minio (s3 compatible storage), but feel free 
-# to use how you please. Find the latest version at https://github.com/joltcan/backup-restic
-# Install restic with homebrew on OSX: ```brew upgrade && brew install restic```
-# (C) Fredrik Lundhag, 2018
+# forked from https://github.com/joltcan/backup-restic
 
 # This program is free software: you can redistribute it and/or modify it under 
 # the terms of the GNU General Public License as published by the Free Software 
@@ -20,7 +15,7 @@
 
 # Some default variables
 ERROR=''
-EXCLUDEFILE="$HOME/.config/restic-excludes"
+EXCLUDEFILE="$HOME/opt/backup_restic/restic-excludes"
 
 # Now get your vars (and a big description if not)
 VARSFILE="$HOME/.config/restic-vars"
