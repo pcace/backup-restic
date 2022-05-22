@@ -1,0 +1,87 @@
+# Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
+
+_.DS_Store
+_.swp
+\*.pyc
+.Trash
+.Xauthority
+.bash_sessions
+.cache
+**/.tmp
+**/temp/
+\*\*/tmp/
+
+# Generic
+
+**/CrashPlan
+_.part
+_.cprestoretmp\*
+**/Google/Chrome/_cache_ \*_/Google/Chrome/Safe Browsing_
+cookies.sqllite-_
+permissions.sqllite-_
+
+# OSX
+
+/dev
+/.vol
+/mach.sym
+/mach_kernel
+.hotfiles.btree*
+**/Network Trash Folder
+**/VM Storage
+.fseventsd.
+**/Library/Caches
+**/.Spotlight-*
+/Network
+/tmp
+/cores
+/afs
+/automount
+/private/Network
+/private/tmp
+/private/var/tmp
+/private/var/folders
+/private/var/run
+/private/var/spool/postfix
+/private/var/vm
+/Previous Systems
+**/lost+found
+**/Microsoft User Data/Entourage Temp
+**/iP\* Software Updates
+**/Library/Application Support/SyncServices
+**/Library/Logs
+**/Library/Mail/Envelope Index
+**/Library/Mail/AvailableFeeds
+**/Library/Mirrors/_
+**/Library/PubSub/Database
+**/Library/PubSub/Downloads
+**/Library/PubSub/Feeds
+**/Library/Safari/Icons.db
+**/Library/Safari/WebpageIcons.db
+**/Library/Safari/HistoryIndex.sk
+**/Library/Calendars/Calendar Cache
+**/iTunes/Album Artwork/Cache
+\*\*/iPhoto Library/iPod Photo Cache_
+**/backups.backupdb/_
+/Desktop DB
+/Desktop DF
+/Network/Servers
+/Users/Shared/SC Info_
+/net
+/private/var/automount
+/private/var/db/dhcpclient
+/private/var/db/fseventsd
+/System/Library/Extensions/Caches
+**MobileBackups
+**/Library/Saved Application State
+**/Library/Mail/**/Info.plist
+**/Library/Calendars/**/Info.plist
+**/Application Support/Google/Chrome/Default/Cookies-journal\*
+**/Library/Cookies
+**/Lightroom Catalog Previews.lrdata
+**/Lightroom Catalog Smart Previews.lrdata
+**/Library/Application Support/MobileSync
+**/Cache
+**/.Cache
+**/Downloads
+**/Library/Containers
