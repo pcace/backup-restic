@@ -35,6 +35,8 @@ permissions.sqllite-_
 /Volumes/Fotos/Lightroom
 /Volumes/Fotos/Fotomediathek.photoslibrary
 
+\*\*/QMapShack/
+
 # OSX
 
 /dev
