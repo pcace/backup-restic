@@ -144,7 +144,7 @@ backup)
     # always check repo:
     restic check
     if [ $? -eq 0 ]; then
-        echo "ok, repo seems to look good"
+        echo "repo looks good"
     else
         echo "repo does not look good, exiting"
         exit 1

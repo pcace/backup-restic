@@ -1,25 +1,3 @@
-# Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
-
-_.DS_Store
-_.swp
-\*.pyc
-.Trash
-.Xauthority
-.bash_sessions
-.cache
-**/.tmp
-**/temp/
-\*\*/tmp/
-
-# Generic
-
-**/CrashPlan
-_.part
-_.cprestoretmp\*
-**/Google/Chrome/_cache_ \*_/Google/Chrome/Safe Browsing_
-cookies.sqllite-_
-permissions.sqllite-_
-
 # Deduplicate User Data
 
 /Volumes/Daten/LR_copy
@@ -35,8 +13,30 @@ permissions.sqllite-_
 /Volumes/Fotos/Lightroom
 /Volumes/Fotos/Fotomediathek.photoslibrary
 
-\*\*/QMapShack/
-\*\*/steamapps/
+**/QMapShack/
+**/steamapps/
+
+# Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
+
+_.DS_Store
+_.swp
+*.pyc
+.Trash
+.Xauthority
+.bash_sessions
+.cache
+**/.tmp
+**/temp/
+**/tmp/
+
+# Generic
+
+**/CrashPlan
+_.part
+_.cprestoretmp*
+**/Google/Chrome/_cache_ *_/Google/Chrome/Safe Browsing_
+cookies.sqllite-_
+permissions.sqllite-_
 
 # OSX
 
@@ -65,7 +65,7 @@ permissions.sqllite-_
 /Previous Systems
 **/lost+found
 **/Microsoft User Data/Entourage Temp
-**/iP\* Software Updates
+**/iP* Software Updates
 **/Library/Application Support/SyncServices
 **/Library/Logs
 **/Library/Mail/Envelope Index
@@ -79,8 +79,8 @@ permissions.sqllite-_
 **/Library/Safari/HistoryIndex.sk
 **/Library/Calendars/Calendar Cache
 **/iTunes/Album Artwork/Cache
-\*\*/iPhoto Library/iPod Photo Cache*
-\*\*/backups.backupdb/*
+**/iPhoto Library/iPod Photo Cache*
+**/backups.backupdb/*
 /Desktop DB
 /Desktop DF
 /Network/Servers
@@ -94,7 +94,7 @@ permissions.sqllite-_
 **/Library/Saved Application State
 **/Library/Mail/**/Info.plist
 **/Library/Calendars/**/Info.plist
-**/Application Support/Google/Chrome/Default/Cookies-journal\*
+**/Application Support/Google/Chrome/Default/Cookies-journal*
 **/Library/Cookies
 **/Lightroom Catalog Previews.lrdata
 **/Lightroom Catalog Smart Previews.lrdata
@@ -102,4 +102,4 @@ permissions.sqllite-_
 **/Cache
 **/.Cache
 **/Downloads
-\*\*/Library/Containers
+**/Library/Containers
