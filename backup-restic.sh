@@ -33,6 +33,7 @@ export RESTIC_PASSWORD="replaceMe"
 
 # Backupvolume
 export BACKUPVOLUME=/Volumes/Backup
+export VOLUMEUUID=332F312A-A582-4368-9EC1-257A7DBDC76B
 
 # Repofolders
 export RESTIC_REPOSITORY=$BACKUPVOLUME/restic-repo
@@ -40,7 +41,9 @@ export RESTIC_CACHE_DIR=$BACKUPVOLUME/.restic_caches
 export TMPDIR=$BACKUPVOLUME/.restic_tmp
 
 # BackupPath:
-export BACKUPPATH="--one-file-system /Users/user/ /Volumes/Daten /Volumes/Fotos"
+
+# export BACKUPPATH="--one-file-system /Users/johannes/Documents/Make"
+export BACKUPPATH="--one-file-system /Users/johannes/ /Volumes/Daten /Volumes/Fotos"
 
 # Excludes:
 export EXCLUDEFILE="$HOME/opt/backup_restic/restic-excludes"
