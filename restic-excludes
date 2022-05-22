@@ -9,8 +9,8 @@
 /Volumes/Daten/Downloads
 /Volumes/Daten/FinalCUT
 
-/Volumes/Fotos/Lightroom
-/Volumes/Fotos/Fotomediathek.photoslibrary
+# /Volumes/Fotos/Lightroom
+# /Volumes/Fotos/Fotomediathek.photoslibrary
 
 **/QMapShack/
 **/steamapps/
