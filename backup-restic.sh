@@ -15,7 +15,7 @@
 
 # Some default variables
 ERROR=''
-EXCLUDEFILE="$HOME/opt/backup_restic/restic-excludes"
+EXCLUDEFILE="$HOME/opt/backup-restic/restic-excludes"
 
 # Now get your vars (and a big description if not)
 VARSFILE="$HOME/.config/restic-vars"
@@ -81,7 +81,7 @@ notification () {
 
 # Download the excludefile
 exclude_file (){
-    curl -sSL -f -z $1 "https://gist.github.com/joltcan/451d7528455f3a350765c8160bb97e07/raw/" -o $1
+    curl -sSL -f -z $EXCLUDEFILE "https://raw.githubusercontent.com/pcace/backup-restic/master/backup-excludes" -o $EXCLUDEFILE
 }
 
 # if we dont' have the excludefile, then it's the first run
@@ -129,7 +129,7 @@ case "$1" in
         ((ERROR += $?))
         ;;
     *)
-        echo "Usage: restic [backup|init|check]"
+        echo "Usage: restic [backup|init|check|forget|prune]"
         exit 1
 esac
 
