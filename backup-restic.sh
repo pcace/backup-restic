@@ -207,5 +207,9 @@ fi
 unset RESTIC_PASSWORD
 unset RESTIC_REPOSITORY
 
+# unmount Backupdisk
+echo "now unmounting $BACKUPVOLUME, UUID: $VOLUMEUUID"
+diskutil umount $VOLUMEUUID
+
 # Exit with the error code from above
 exit $ERROR
