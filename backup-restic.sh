@@ -14,7 +14,7 @@
 # this program. If not, see http://www.gnu.org/licenses/.
 
 #exit if sth. fails...
-set -euo pipefail
+#set -euo pipefail
 
 # Some default variables
 ERROR=''
@@ -141,6 +141,16 @@ init)
 
 backup)
     # Perform backup
+    # always check repo:
+    restic check
+    if [ $? -eq 0 ]; then
+        echo "ok, repo seems to look good"
+    else
+        echo "repo does not look good, exiting"
+        exit 1
+    fi
+
+    # actual Backup
     restic backup $OPTIONS --exclude-file=$EXCLUDEFILE $BACKUPPATH
     # Store there error here, so we can add errors later if needed.
     ((ERROR += $?))
@@ -170,7 +180,6 @@ prune)
     ;;
 esac
 
-# Report errors
 if [ $ERROR -eq 0 ]; then
     # Make sure we only clean old snapshots during night, regardless on when we run backup
     HOUR=$(date +%H)
@@ -208,8 +217,12 @@ unset RESTIC_PASSWORD
 unset RESTIC_REPOSITORY
 
 # unmount Backupdisk
-echo "now unmounting $BACKUPVOLUME, UUID: $VOLUMEUUID"
-diskutil umount $VOLUMEUUID
+if [ $ERROR ]; then
+    echo "ran into error, not going to umount disks"
+else
+    echo "everything seems fine, now unmounting $BACKUPVOLUME, UUID: $VOLUMEUUID"
+    diskutil umount $VOLUMEUUID
+fi
 
 # Exit with the error code from above
 exit $ERROR
