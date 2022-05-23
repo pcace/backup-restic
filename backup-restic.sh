@@ -134,9 +134,9 @@ notification() {
 }
 
 # Download the excludefile
-#exclude_file() {
-#    curl -sSL -f -z $EXCLUDEFILE "https://raw.githubusercontent.com/pcace/backup-restic/master/restic-excludes" -o $EXCLUDEFILE
-#}
+exclude_file() {
+    curl -sSL -f -z $EXCLUDEFILE "https://raw.githubusercontent.com/pcace/backup-restic/master/restic-excludes" -o $EXCLUDEFILE
+}
 
 # if we dont' have the excludefile, then it's the first run
 if [ ! -f $EXCLUDEFILE ]; then

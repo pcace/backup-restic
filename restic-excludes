@@ -17,6 +17,13 @@
 
 # Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
 
+
+**/GRAPHISOFT
+**/QMapShack/Maps
+*/Downloads
+**/Steam/steamapps
+**/Garmin/Maps
+**/Library/Caches
 **/.vscode
 **/.platformio
 **/.npm/
