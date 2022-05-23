@@ -84,6 +84,13 @@ if ! [ -d $BACKUPVOLUME ]; then
     exit 1
 fi
 
+
+    echo "trying to mount FotoDisk"
+    diskutil mount $FOTODISKUUID
+    echo "trying to mount DataDisk"
+    diskutil mount $DATADISKUUID
+
+
 # try to mount second repo Volume:
 #osascript -e "try
 #	mount volume "$NETWORKVOLUME"
@@ -228,12 +235,13 @@ unset RESTIC_PASSWORD
 unset RESTIC_REPOSITORY
 
 # unmount Backupdisk
-if [ $ERROR ]; then
-    echo "ran into error, not going to umount disks"
-else
+
     echo "everything seems fine, now unmounting $BACKUPVOLUME, UUID: $VOLUMEUUID"
     diskutil umount $VOLUMEUUID
-fi
+#    echo "trying to unmount FotoDisk"
+#    diskutil umount $FOTODISKUUID
+#    echo "trying to unmount DataDisk"
+#    diskutil umount $DATADISKUUID
 
 # Exit with the error code from above
 exit $ERROR

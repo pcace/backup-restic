@@ -17,6 +17,10 @@
 
 # Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
 
+.TemporaryItems
+Keystone.stats
+**/CoreSpotlight/
+.fseventsd
 _.DS_Store
 _.swp
 *.pyc
