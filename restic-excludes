@@ -17,7 +17,7 @@
 
 # Excludes based on Crashplan defaults (https://support.code42.com/CrashPlan/4/Troubleshooting/What_is_not_backing_up)
 
-.npm/
+**/.npm/
 .TemporaryItems
 Keystone.stats
 **/CoreSpotlight/
